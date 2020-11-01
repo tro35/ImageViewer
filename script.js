@@ -43,8 +43,8 @@ $('#buttonl').click(() => {
 
 
   imagesData.forEach((item, index) => {
-    $('.thumbnails').append(`<div class="picturest" data-index="${index}"> <img id="mObrazek" src="${item.photo}"> </div>`);
-    $('.picturest').click((event) => {
+    $('.thumbnails_container').append(`<div class="thumbnail" > <img src="${item.photo}" class="thumbnail_image" data-index="${index}" > </div>`);
+    $('.thumbnail').click((event) => {
       let indexClicked = $(event.target).attr('data-index');
       // indexClicked is now a string! if you need it as a number you have to change it
       // because for example "1" + 1 is going to be "11" and not 2
@@ -55,3 +55,13 @@ $('#buttonl').click(() => {
     });
   });
   
+  /*images.forEach((item, index) => {
+    $('.thumbnail_container').append(`<div class="thumbnail"><div class="title_container"><div class="title">${dataImages[index].title}</div></div><img  
+    src="${item}" class="thumbnail_image" data-index="${index}"></div>`);
+    $('.thumbnail_image').click(event => {
+
+        let indexClicked = $(event.target).attr('data-index');
+        loadPhoto(indexClicked);
+    });
+
+});*/

@@ -35,19 +35,26 @@ body{
   opacity: 1;
 }
 
-.thumbnails{
-  display: flex;
-  max-width: 100;
-  max-height: 200;
-  justify-content: center;
-  margin: auto;
-  padding-top: 50px;
+.thumbnails_container{
+    max-width: 800px;
+    max-height: 300px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 550px;
+    justify-content: space-between;
+    
   }
 
-#mObrazek{
+.thumbnail{
   width: 200px;
   height: 100px;
-  padding: 20px;
+}
+
+.thumbnail_image{
+  height: 100%;
+  width:100%;
+  
+  box-shadow: 0px 0px 10px 3px grey;
 }
 
 
