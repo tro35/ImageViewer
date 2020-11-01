@@ -1,23 +1,35 @@
 let data = {
-    photo: 'images/100_0448.jpg',
+    photo: 'Images/1000448.JPG',
     title: 'Sea view',
     description: 'Crete south coast'
   };
 let data1 = {
-    photo: 'images/100_0474.jpg',
+    photo: 'Images/1000474.JPG',
     title: 'Infinity pool',
     description: 'View from pool at Kakkos Bay'
   };  
 
 let data2 = {
-    photo: 'images/100_0541.jpg',
+    photo: 'Images/1000541.JPG',
     title: 'Minoan palace',
     description: 'Trip to Minoan palace 1500 B.C., Crete'
+  }; 
+  
+let data3 = {
+    photo: 'Images/1000569.JPG',
+    title: 'Minoan palace',
+    description: 'Guard tower'
   };  
+  
+let data4 = {
+    photo: 'Images/1000597.JPG',
+    title: 'Libyan sea',
+    description: 'Crete south coast'
+  };    
 
   
 let currentPhoto = 0;
-let imagesData = [data, data1, data2];
+let imagesData = [data, data1, data2, data3, data4];
 /*$('#picture').attr('src', imagesData[currentPhoto].photo);*/
 
 let loadPhoto = (photoNumber) => {
