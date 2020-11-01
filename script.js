@@ -40,3 +40,18 @@ $('#buttonl').click(() => {
     currentPhoto--;}
     loadPhoto(currentPhoto);
   })
+
+
+  imagesData.forEach((item, index) => {
+    $('.thumbnails').append(`<div class="picturest" data-index="${index}"> <img id="mObrazek" src="${item.photo}"> </div>`);
+    $('.picturest').click((event) => {
+      let indexClicked = $(event.target).attr('data-index');
+      // indexClicked is now a string! if you need it as a number you have to change it
+      // because for example "1" + 1 is going to be "11" and not 2
+      let numberIndex = parseInt(indexClicked);
+      
+      // now numberIndex is a number
+      loadPhoto(numberIndex);
+    });
+  });
+  
